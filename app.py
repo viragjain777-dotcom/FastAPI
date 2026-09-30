@@ -15,6 +15,8 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT_OLLAMA")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
+st.secrets["OPENAI_API_KEY"]
+
 app = FastAPI(
     title="Langchain FastAPI App", 
     version="1.0.0", 
